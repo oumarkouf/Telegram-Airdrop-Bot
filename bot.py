@@ -88,7 +88,7 @@ Hello, NAME! I am Boby, your friendly {COIN_NAME} Airdrop Bot 🤖🦾, nice to 
 ⭐️ For each referral - Get {"{:,.2f}".format(REFERRAL_REWARD)} {COIN_SYMBOL}
 
 📘By Participating you are agreeing to the {COIN_NAME} (Airdrop) Program Terms and Conditions. Please see pinned post for more information.
-Write and send "🚀 Join Airdrop" to proceed"""
+Click "🚀 Join Airdrop" to proceed"""
 tasks = ""
 
 PROCEED_MESSAGE = f"""
@@ -252,7 +252,7 @@ def generateCaptcha(update, context):
 
 def submit_details(update, context):
     update.message.reply_text(text=PROCEED_MESSAGE, parse_mode=telegram.ParseMode.MARKDOWN)
-    update.message.reply_text(text="Please write and send \"Submit Details\" to proceed", parse_mode=telegram.ParseMode.MARKDOWN, reply_markup=ReplyKeyboardMarkup(
+    update.message.reply_text(text="Please click \"Submit Details\" to proceed", parse_mode=telegram.ParseMode.MARKDOWN, reply_markup=ReplyKeyboardMarkup(
         [["Submit Details"], ["Cancel"]]
     ))
     return FOLLOW_TELEGRAM
@@ -260,7 +260,7 @@ def submit_details(update, context):
 
 def follow_telegram(update, context):
     update.message.reply_text(text=MAKE_SURE_TELEGRAM, parse_mode=telegram.ParseMode.MARKDOWN)
-    update.message.reply_text(text="Please write and send \"Done\" to proceed", parse_mode=telegram.ParseMode.MARKDOWN, reply_markup=ReplyKeyboardMarkup(
+    update.message.reply_text(text="Please click \"Done\" to proceed", parse_mode=telegram.ParseMode.MARKDOWN, reply_markup=ReplyKeyboardMarkup(
         [["Done"], ["Cancel"]]
     ))
 
