@@ -82,13 +82,13 @@ if(EXPLORER_URL != ""):
 if(WEBSITE_URL != ""):
     WEBSITE_URL = f"\nWebsite: {WEBSITE_URL}"
 WELCOME_MESSAGE = f"""
-Hello, NAME! I am your friendly {COIN_NAME} Airdrop bot
+Hello, NAME! I am Boby, your friendly {COIN_NAME} Airdrop Bot 🤖🦾, nice to meet you 🤝. I represent Mansaa Network 🌎 the first blockchain project which aims to bring internet 🛰 to billions of people at a very low price 😉.
 {SYMBOL}
-🔸For Joining - Get {AIRDROP_AMOUNT} {COIN_SYMBOL}
+🔸 For Joining - Get {AIRDROP_AMOUNT} {COIN_SYMBOL}
 ⭐️ For each referral - Get {"{:,.2f}".format(REFERRAL_REWARD)} {COIN_SYMBOL}
 
 📘By Participating you are agreeing to the {COIN_NAME} (Airdrop) Program Terms and Conditions. Please see pinned post for more information.
-Click "🚀 Join Airdrop" to proceed"""
+Write and send "🚀 Join Airdrop" to proceed"""
 tasks = ""
 
 PROCEED_MESSAGE = f"""
@@ -101,19 +101,19 @@ PROCEED_MESSAGE = f"""
 - Join our telegram channels
 - Follow our Twitter page
 
-NOTE: Users found Cheating would be disqualified & banned immediately.
+NOTE: Users found Cheating would be disqualified & banned immediately. Those who don't do the mandatory tasks correctly, will not get Mansaa tokens.
 
 Airdrop Date: *{AIRDROP_DATE}*{EXPLORER_URL}
 {WEBSITE_URL}
 """
 
 MAKE_SURE_TELEGRAM = f"""
-Do no forget to join our Telegram channel
+Do no forget to join our Telegram channel 😁🚀
 {TELEGRAM_LINKS}
 """
 
 FOLLOW_TWITTER_TEXT = f"""
-🔹 Follow our Twitter page
+🔹 Follow our Twitter page 
 {TWITTER_LINKS}
 """
 
@@ -138,7 +138,7 @@ REPLACEME
 
 WITHDRAWAL_TEXT = f"""
 Withdrawals would be sent out automatically to your {AIRDROP_NETWORK} address on the {AIRDROP_DATE}
-NOTE: Users found Cheating would be disqualified & banned immediately."""
+NOTE: Users found Cheating would be disqualified & banned immediately. Those who don't do the mandatory tasks correctly, will not get Mansaa tokens."""
 
 BALANCE_TEXT = f"""
 {COIN_NAME} Airdrop Balance: *IARTBALANCE*
@@ -252,7 +252,7 @@ def generateCaptcha(update, context):
 
 def submit_details(update, context):
     update.message.reply_text(text=PROCEED_MESSAGE, parse_mode=telegram.ParseMode.MARKDOWN)
-    update.message.reply_text(text="Please click on \"Submit Details\" to proceed", parse_mode=telegram.ParseMode.MARKDOWN, reply_markup=ReplyKeyboardMarkup(
+    update.message.reply_text(text="Please write and send \"Submit Details\" to proceed", parse_mode=telegram.ParseMode.MARKDOWN, reply_markup=ReplyKeyboardMarkup(
         [["Submit Details"], ["Cancel"]]
     ))
     return FOLLOW_TELEGRAM
@@ -260,7 +260,7 @@ def submit_details(update, context):
 
 def follow_telegram(update, context):
     update.message.reply_text(text=MAKE_SURE_TELEGRAM, parse_mode=telegram.ParseMode.MARKDOWN)
-    update.message.reply_text(text="Please click on \"Done\" to proceed", parse_mode=telegram.ParseMode.MARKDOWN, reply_markup=ReplyKeyboardMarkup(
+    update.message.reply_text(text="Please write and send \"Done\" to proceed", parse_mode=telegram.ParseMode.MARKDOWN, reply_markup=ReplyKeyboardMarkup(
         [["Done"], ["Cancel"]]
     ))
 
