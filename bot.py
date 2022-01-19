@@ -101,7 +101,7 @@ PROCEED_MESSAGE = f"""
 - Join our telegram channels
 - Follow our Twitter page
 
-NOTE: Users found Cheating would be disqualified & banned immediately. Those who don't do the mandatory tasks correctly, will not get Mansaa tokens.
+🚨 NOTE: Users found Cheating would be disqualified & banned immediately. Those who don't do the mandatory tasks correctly, will not get Mansaa tokens.
 
 Airdrop Date: *{AIRDROP_DATE}*{EXPLORER_URL}
 {WEBSITE_URL}
@@ -138,7 +138,7 @@ REPLACEME
 
 WITHDRAWAL_TEXT = f"""
 Withdrawals would be sent out automatically to your {AIRDROP_NETWORK} address on the {AIRDROP_DATE}
-NOTE: Users found Cheating would be disqualified & banned immediately. Those who don't do the mandatory tasks correctly, will not get Mansaa tokens."""
+🚨 NOTE : Users found Cheating would be disqualified & banned immediately. Those who don't do the mandatory tasks correctly, will not get Mansaa tokens."""
 
 BALANCE_TEXT = f"""
 {COIN_NAME} Airdrop Balance: *IARTBALANCE*
