@@ -82,9 +82,11 @@ if(EXPLORER_URL != ""):
 if(WEBSITE_URL != ""):
     WEBSITE_URL = f"\nWebsite: {WEBSITE_URL}"
 WELCOME_MESSAGE = f"""
-Hello, NAME! I am your friendly {COIN_NAME} Airdrop bot
+Hello, NAME! 
+I am your friendly {COIN_NAME} Airdrop Bot 🤖🦾, nice to meet you 🤝. 
+I represent Mansaa Network 🌎 the first blockchain project which aims to bring internet 🛰 to billions of people at a very low price 😉.
 {SYMBOL}
-🔸For Joining - Get {AIRDROP_AMOUNT} {COIN_SYMBOL}
+🔸 For Joining - Get {AIRDROP_AMOUNT} {COIN_SYMBOL}
 ⭐️ For each referral - Get {"{:,.2f}".format(REFERRAL_REWARD)} {COIN_SYMBOL}
 
 📘By Participating you are agreeing to the {COIN_NAME} (Airdrop) Program Terms and Conditions. Please see pinned post for more information.
@@ -101,19 +103,19 @@ PROCEED_MESSAGE = f"""
 - Join our telegram channels
 - Follow our Twitter page
 
-NOTE: Users found Cheating would be disqualified & banned immediately.
+🚨 NOTE: Users found Cheating would be disqualified & banned immediately.
 
 Airdrop Date: *{AIRDROP_DATE}*{EXPLORER_URL}
 {WEBSITE_URL}
 """
 
 MAKE_SURE_TELEGRAM = f"""
-Do no forget to join our Telegram channel
+Do no forget to join our Telegram channel 😁🚀
 {TELEGRAM_LINKS}
 """
 
 FOLLOW_TWITTER_TEXT = f"""
-🔹 Follow our Twitter page
+🔹 Follow our Twitter page 
 {TWITTER_LINKS}
 """
 
@@ -138,7 +140,7 @@ REPLACEME
 
 WITHDRAWAL_TEXT = f"""
 Withdrawals would be sent out automatically to your {AIRDROP_NETWORK} address on the {AIRDROP_DATE}
-NOTE: Users found Cheating would be disqualified & banned immediately."""
+🚨 NOTE : Users found Cheating would be disqualified & banned immediately."""
 
 BALANCE_TEXT = f"""
 {COIN_NAME} Airdrop Balance: *IARTBALANCE*
